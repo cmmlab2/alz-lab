@@ -156,9 +156,13 @@ management_group_settings = {
       subscription_id       = "$${subscription_id_management}"
       management_group_name = "management"
     }
-    security = {
+        security = {
       subscription_id       = "$${subscription_id_security}"
       management_group_name = "security"
+    }
+    corp = {
+      subscription_id       = "d2329daf-7a8d-4dae-bdba-80cb5e8549e9"
+      management_group_name = "corp"
     }
   }
   policy_assignments_to_modify = {
