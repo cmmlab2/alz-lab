@@ -66,6 +66,17 @@ provider "azurerm" {
   }
 }
 
+provider "azurerm" {
+  resource_provider_registrations = "none"
+  alias                           = "corp"
+  subscription_id                 = "d2329daf-7a8d-4dae-bdba-80cb5e8549e9"
+  features {
+    resource_group {
+      prevent_deletion_if_contains_resources = false
+    }
+  }
+}
+
 provider "azapi" {
   alias                      = "connectivity"
   skip_provider_registration = true
